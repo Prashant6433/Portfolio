@@ -1,4 +1,4 @@
-# Clone Portfolio
+# Portfolio
 
 This is a personal portfolio website for Prashant, showcasing frontend and Python development skills. The project uses HTML, CSS (with Tailwind and custom styles), and JavaScript for interactivity.
 
