@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant's - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="md:hidden fixed top-4 right-4 z-50">
+        <button id="mobile-menu-button" class="text-gray-800 focus:outline-none p-2 rounded-full shadow-lg bg-white">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </div>
+
+    <aside id="mobile-sidebar" class="mobile-sidebar md:hidden">
+        <div class="flex flex-col items-center p-8">
+            <button id="close-menu-button" class="absolute top-4 right-4 text-white text-2xl focus:outline-none">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="img.jpg" alt="Prashant" class="rounded-circle-image mb-4">
+            <h2 class="text-xl font-bold mb-2">I'M Prashant</h2>
+            <p class="text-sm">FRONTEND DEVELOPER / PYTHON DEVELOPER</p>
+            <nav class="mt-8 w-full flex flex-col items-center space-y-2">
+                <a href="#hero" class="mobile-nav-link nav-link nav-link-hero active">
+                    <i class="fas fa-home"></i>
+                    <span>HOME</span>
+                </a>
+                <a href="#about" class="mobile-nav-link nav-link nav-link-about">
+                    <i class="fas fa-user-circle"></i>
+                    <span>ABOUT ME</span>
+                </a>
+                <a href="#resume" class="mobile-nav-link nav-link nav-link-resume">
+                    <i class="fas fa-file-alt"></i>
+                    <span>RESUME</span>
+                </a>
+                <a href="#portfolio" class="mobile-nav-link nav-link nav-link-portfolio">
+                    <i class="fas fa-briefcase"></i>
+                    <span>PORTFOLIO</span>
+                </a>
+                <a href="#contact" class="mobile-nav-link nav-link nav-link-contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>CONTACT</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="flex flex-col md:flex-row">
+        <aside class="sidebar hidden md:flex">
+            <img src="img.jpg" alt="Prashant" class="rounded-circle-image mb-4">
+            <h2 class="text-xl font-bold mb-2">I'M Prashant</h2>
+            <p class="text-sm">FRONTEND DEVELOPER / PYTHON DEVELOPER</p>
+            <nav class="mt-8 w-full">
+                <a href="#hero" class="nav-link nav-link-hero active">
+                    <i class="fas fa-home"></i>
+                    <span>HOME</span>
+                </a>
+                <a href="#about" class="nav-link nav-link-about">
+                    <i class="fas fa-user-circle"></i>
+                    <span>ABOUT ME</span>
+                </a>
+                <a href="#resume" class="nav-link nav-link-resume">
+                    <i class="fas fa-file-alt"></i>
+                    <span>RESUME</span>
+                </a>
+                <a href="#portfolio" class="nav-link nav-link-portfolio">
+                    <i class="fas fa-briefcase"></i>
+                    <span>PORTFOLIO</span>
+                </a>
+                <a href="#contact" class="nav-link nav-link-contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>CONTACT</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content flex-grow">
+            <section id="hero" class="py-20 px-8 bg-white rounded-lg shadow-lg mb-8" style="background-image: url('?'); background-size: cover; background-position: center;">
+                <div class="flex flex-col-reverse md:flex-row items-center md:items-start justify-between">
+                    <div class="flex-1 mt-8 md:mt-0">
+                        <p class="text-xl text-yellow-500 font-semibold mb-2">HI THERE!</p>
+                        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+                            I'M <span class="text-yellow-500">Prashant</span>
+                        </h1>
+                        <p class="text-lg font-medium mb-4">FRONTEND DEVELOPER / PYTHON DEVELOPER</p>
+                        <p class="text-gray-600 max-w-lg mb-6">
+                            A highly motivated and innovative software developer. I specialize in front-stack development, web applications, and scalable solutions. My passion is to transform ideas into impactful digital products through clean code and creative problem-solving.
+                        </p>
+                        <a href="#about" class="inline-block bg-yellow-500 text-white font-semibold py-3 px-6 rounded-full transition-transform transform hover:scale-105">
+                            MORE ABOUT ME
+                        </a>
+                    </div>
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-xl mt-8 md:mt-0">
+                        <img src="img.jpg" alt="Prashant" class="w-full h-full object-cover">
+                        <div class="absolute inset-y-0 right-0 flex flex-col items-center justify-center space-y-4 pr-4 hidden md:flex">
+                            <a href="#" class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg"><i class="fab fa-facebook-f text-gray-500"></i></a>
+                            <a href="https://x.com/Parshu_exe?s=09" class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg"><i class="fab fa-twitter text-gray-500"></i></a>
+                            <a href="https://www.instagram.com/prashu.exe?igsh=M2YycmRmOGJjanlj" class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg"><i class="fab fa-instagram text-gray-500"></i></a>
+                            <a href="https://www.linkedin.com/in/prashant045" class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg"><i class="fab fa-linkedin-in text-gray-500"></i></a>
+                            <a href="https://github.com/prashant045" class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg"><i class="fab fa-github text-gray-500"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-16 px-8 bg-white rounded-lg shadow-lg mb-8">
+                <h2 class="text-3xl font-bold section-title">ABOUT ME</h2>
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
+                    <img src="img.jpg" alt="Prashant" class="w-48 h-48 rounded-full shadow-lg object-cover">
+                    <div class="flex-1">
+                        <p class="text-lg font-semibold mb-2">I'm Prashant, <span class="text-yellow-500">FRONTEND DEVELOPER / PYTHON DEVELOPER</span></p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            A highly motivated and innovative software developer. I specialize in front-stack development, web applications, and scalable solutions. My passion is to transform ideas into impactful digital products through clean code and creative problem-solving.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="p-6 bg-gray-100 rounded-lg text-center shadow-md">
+                                <h3 class="text-xl font-bold mb-2">What I Do</h3>
+                                <div class="flex flex-col items-center justify-center space-y-2">
+                                    <div class="flex items-center space-x-4">
+                                        <i class="fas fa-paint-brush text-yellow-500 text-2xl"></i>
+                                        <p class="font-medium">FRONTEND DESIGN</p>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <i class="fas fa-code text-yellow-500 text-2xl"></i>
+                                        <p class="font-medium">WEB DESIGN</p>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <i class="fas fa-code text-yellow-500 text-2xl"></i>
+                                        <p class="font-medium">PYTHON DEVELOPER</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resume" class="py-16 px-8 bg-white rounded-lg shadow-lg mb-8">
+                <h2 class="text-3xl font-bold section-title">RESUME</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                                <p class="text-sm text-gray-500">2020 - 2022</p>
+                                <p class="text-lg font-bold">12th Completed</p>
+                                <p class="text-yellow-500">Manish College</p>
+                            </div>
+                            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                                <p class="text-sm text-gray-500">2022 - 2025</p>
+                                <p class="text-lg font-bold">Bachelor of Design</p>
+                                <p class="text-yellow-500">SJRS College</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="py-16 px-8 bg-white rounded-lg shadow-lg mb-8">
+                <h2 class="text-3xl font-bold section-title">PORTFOLIO</h2>
+                <div class="flex justify-center space-x-4 flex-wrap mb-8">
+                    <button class="portfolio-filter-btn px-4 py-2 my-1 rounded-full font-semibold bg-gray-200 hover:bg-yellow-500 hover:text-white transition-colors" data-filter="all">ALL</button>
+                    <button class="portfolio-filter-btn px-4 py-2 my-1 rounded-full font-semibold bg-gray-200 hover:bg-yellow-500 hover:text-white transition-colors" data-filter="python">PYTHON</button>
+                    <button class="portfolio-filter-btn px-4 py-2 my-1 rounded-full font-semibold bg-gray-200 hover:bg-yellow-500 hover:text-white transition-colors" data-filter="fullstack">FULL STACK</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="portfolio-item python show">
+                        <img src="https://placehold.co/400x300/e0e0e0/333?text=Python+Project" alt="Python Project" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="portfolio-item fullstack show">
+                        <img src="https://placehold.co/400x300/d0d0d0/333?text=Full+Stack+Project" alt="Full Stack Project" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="portfolio-item python show">
+                        <img src="https://placehold.co/400x300/c0c0c0/333?text=Python+Project" alt="Another Python Project" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-16 px-8 bg-white rounded-lg shadow-lg mb-8">
+                <h2 class="text-3xl font-bold section-title">CONTACT</h2>
+                <p class="text-gray-600 mb-6">
+                    Feel free to get in touch with me for any collaboration or inquiries.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">Location:</p>
+                                <p class="text-gray-600">Airoli, Navi Mumbai, India</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone-alt text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">Phone:</p>
+                                <p class="text-gray-600">+91 9820343391</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-yellow-500"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">Email:</p>
+                                <p class="text-gray-600">prashant.766611@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-lg border border-gray-300"></textarea>
+                        <button type="submit" class="w-full bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">
+                            SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
